@@ -4,7 +4,6 @@ import { sessionStorage } from "~/session.server";
 import { authenticator } from "~/auth.server";
 
 export const loader: LoaderFunction = async ({request}) => {
-
   await authenticator.authenticate("FusionAuth", request, {
     successRedirect: "/dashboard",
     failureRedirect: "/login",

@@ -3,8 +3,8 @@
 
 // export const loader: LoaderFunction = async ({request}) => {
 
-    // Once you've setup a user with the appropiate methods, you
-    // can uncomment this to redirect unlogged out users somewhere
+    // Once you've setup a user with the appropriate methods, you
+    // can uncomment this to redirect logged out users somewhere
     // let user = await authenticator.isAuthenticated(request, {
     //     failureRedirect: "/",
     // });

@@ -3,7 +3,8 @@ import { Link } from "@remix-run/react";
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
-      <h1>Welcome to the Remix Fusion Auth Demo</h1>
+      <h1>Login error</h1>
+      <h3>You are not logged in. Please click the link below to try again.</h3>
       <ul>
       <li>
           <Link
@@ -11,11 +12,6 @@ export default function Index() {
           >
             Login
           </Link>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
         </li>
       </ul>
     </div>

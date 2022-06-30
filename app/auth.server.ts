@@ -19,6 +19,8 @@ authenticator.use(
         async ({ accessToken, refreshToken, extraParams, profile, context }) => {
             // here you can use the params above to get the user and return it
             // what you do inside this and how you find the user is up to you
+	    // This function is MANDATORY for the system to work, and would be the
+            // main cause of being redirected to the /error route
             console.log("Verified by FusionAuth!")
             // console.log(`ACCESS TOKEN: ${accessToken}`);
             // console.log(`REFRESH TOKEN: ${refreshToken}`)
