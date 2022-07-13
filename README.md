@@ -5,7 +5,12 @@
 - [Remix-Auth-Oauth2 Docs](https://github.com/sergiodxa/remix-auth-oauth2)
 - [FusionAuth OAuth Docs](https://fusionauth.io/docs/v1/tech/oauth/endpoints)
 
+## Prerequisites
+
+You need to have FusionAuth installed. Here's [instructions on how to do so](https://fusionauth.io/docs/v1/tech/installation-guide/)
+
 ## Notes about this Demo
+
 In this demo, sending a GET request (or navigating to) the login route should redirect you to the FusionAuth login page. If you are already logged in, it will return you to the callbackUrl defined in `auth.server.ts`. This callback url must be entered in your FusionAuth App details. The default callback route `/auth/callback` will store the token in your file based session on the server, and issue a session ID that is stored in the client in your session cookie.
 
 You will want to choose a different [session storage method](https://remix.run/docs/en/v1/api/remix#sessions) if you do not have persistent filesystem access on your Remix Deployment target.
@@ -28,9 +33,18 @@ Some of these files have the same name as files you likely already have in your 
 
 Run `npm install`.
 
-Copy the `env.example` to .env file and enter in your FusionAuth credentials.
+Copy the `env.example` to `.env` file and update it with your client secret, client Id and other settings.
 
-You'll also need to add the auth callback for your app to the FusionAuth settings.
+Here's an example `.env` file:
+
+```
+CLIENT_ID="90534dd2-a4b0-4a61-a596-580283134c02"
+CLIENT_SECRET="wmDpu-cMBgxCXKbGj93RsqAFjerAjiBHMi-7sP8VMAk"
+AUTH_URL="http://localhost:9011/oauth2/authorize"
+AUTH_CALLBACK_URL="http://localhost:3000/auth/callback"
+```
+
+You'll also need to add the auth callback for your app to the FusionAuth application config.
 
 ## Development
 
