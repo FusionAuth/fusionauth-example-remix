@@ -12,18 +12,25 @@ You will want to choose a different [session storage method](https://remix.run/d
 
 The files you will need to copy from this demo to any other Remix app you'd like to try FusionAuth with are:
 
+```
 .gitignore
 env.example
 package.json
 app/auth.server.ts
 app/session.server.ts
 app/routes/*
+```
 
 Some of these files have the same name as files you likely already have in your Remix app, so be careful!
 
 
 ## Setup
-Copy the `env.example` to .env file and enter in your FusionAuth credentials. You'll also need to add the auth callback for your app to the FusionAuth settings.
+
+Run `npm install`.
+
+Copy the `env.example` to .env file and enter in your FusionAuth credentials.
+
+You'll also need to add the auth callback for your app to the FusionAuth settings.
 
 ## Development
 
