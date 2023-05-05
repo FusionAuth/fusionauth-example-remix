@@ -40,7 +40,7 @@ Here's an example `.env` file:
 ```
 CLIENT_ID="90534dd2-a4b0-4a61-a596-580283134c02"
 CLIENT_SECRET="wmDpu-cMBgxCXKbGj93RsqAFjerAjiBHMi-7sP8VMAk"
-AUTH_URL="http://localhost:9011/oauth2/authorize"
+AUTH_URL="http://localhost:9011/oauth2"
 AUTH_CALLBACK_URL="http://localhost:3000/auth/callback"
 ```
 
